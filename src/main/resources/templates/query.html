@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table width=500 align=center border=1>
+		<tr>
+			<td>編號
+			<td>姓名
+			<td>地址
+		<tr th:each="u:${USER}">
+			<td th:text="${u.id}">
+			<td th:text="${u.name}">
+			<td th:text="${u.address}">
+		<tr>
+			<td colspan=3 align=center>
+			<a href="/">回首頁</a>
+	
+	</table>
+	
+	
+</body>
+</html>
